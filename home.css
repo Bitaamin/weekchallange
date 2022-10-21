@@ -6,13 +6,11 @@
     padding: 0;    
 }
 
-/* Header */
-
 #head{
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    width: 1280px;
+    max-width: 1280px;
     margin: 16px auto;
 }
 .menu {
@@ -348,7 +346,7 @@ a {
     margin-bottom: 48px;
 }
 .img {
-    background: url("about-image.png");
+    background: url("./images/about-image.png");
     max-width: 640px;
     height: 640px;
     border-radius: 20px;
@@ -374,16 +372,24 @@ a {
     max-width: 100%;
     margin: auto;
     margin-bottom: 128px;
+    
 }
 
 .container5 {
-    max-width: 1274.39px;
+    /* max-width: 1274.39px; */
     background: #EDF7FF;
     border-radius: 20px;
-    height: 682px;
+    /* height: 682px; */
     display: flex;
     justify-content: space-between;
     margin: auto;
+}
+.addsec{
+    max-width: 1280px;
+    position: relative;
+ 
+    margin: auto;
+    padding: 15px;
 }
 .title {
     display: flex;
@@ -444,7 +450,7 @@ a {
     /* height: 210px; */
 }
 .image2{
-    background-image: url(team.png);
+    background-image: url(./images/team.png);
     width: 472px;
     height: 466px;
 }
@@ -474,8 +480,8 @@ a {
     position: absolute;
     width: 179px;
     height: 178px;
-    left: 1436px;
-    top: 3230px;
+    top: 0;
+    right: 0;
 }
 
 /*  section 6  */
@@ -494,7 +500,7 @@ a {
  }
  .backgroundimage{
     flex: 1;
-    background: url(experience-image.png);
+    background: url(./images/experience-image.png);
     width: 963px;
     height: 518px;
  }
@@ -536,8 +542,14 @@ a {
     max-width: 1280px;
     height: 501px;
     margin: auto;
-    align-items: center;
+    margin-bottom: 128px;
 
+  }
+  .sec7part1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
   }
   .topbody h1 {
     font-weight: 600;
@@ -580,31 +592,57 @@ a {
     color: #F58A07;
   }
   .image4 {
-    background-image: url(video-image.png);
+    background-image: url(./images/video-image.png);
     width: 620px;
     height: 501px;
     border-radius: 20px;
   }
-.backgroundwhite {
-    background-color: white;
+  .playbutton {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 57px;
+    left: 57px;
+    width: 160px;
+    height: 51px;
+  }
+  .playimage {
     border-radius: 50%;
     position: absolute;
     left: 40px;
     bottom: 40px;
-    width: 51px;
-    height: 51px;
-    z-index: 1;
+  }
+  .whiteback {
+    position: absolute;
+    left: 57px;
+    bottom: 57px;
+    width: 17px;
+    height: 17px;
+  }
+.playtext {
+    position: absolute;
+    left: 108px;
+    bottom: 57px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 101.8%;
+    text-transform: capitalize; 
+    color: #FFFFFF;
+    width: 122px;
+    height: 18px;
 }
 
 /* section 8 */
 
 #section8 {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
-    background: #DCEAF5;
+    background-color: #DCEAF5;
+    height: 819px;
 }
 .container8 {
     max-width: 1280px;
+    padding: 96px 0;
     margin: auto;
 }
 .sec8part1 h1 {
@@ -614,6 +652,7 @@ a {
     letter-spacing: -0.03em;
     text-transform: capitalize;
     color: #0D1317;
+    margin-bottom: 64px;
 }
 .sec8part2 {
     display: flex;
@@ -621,13 +660,19 @@ a {
 }
 .item {
     background-color: white;
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+.items {
+    padding: 32px;
 }
 .item img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 400px;
     height: 230px;
-    margin-bottom: 32px;
 }
 .item h2 {
     font-weight: 500;
@@ -653,6 +698,137 @@ a {
     font-size: 16px;
     line-height: 106.5%;
     color: #F58A07;
-    width: 90px;
     height: 17px;
+}
+.item a::after {
+    content: "\2192";
+}
+
+/* footer */
+footer {
+    background: #063255;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+.foot {
+    width:1280px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+}
+.footimage1 {
+    margin-bottom: 32px;
+}
+.footbody1 {
+    display: flex; 
+    justify-content: space-between;
+}
+.footitem1 h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    width: 351px;
+    height: 88px;
+    margin-bottom: 32px;
+}
+.footlogos {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-bottom: 83px;
+}
+.footitem2 h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.footitem2 h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footitem3 h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+.footitem3 a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 16px;
+}
+.footitem4 h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    width: 141px;
+    height: 27px;
+    margin-bottom: 24px;
+}
+.searchborder {
+    width: 342px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 31px;
+    display: block;
+    padding-left: 32px;
+    margin-bottom: 16px;
+}
+.buttonborder {
+    background: #F58A07;
+    border-radius: 31px;
+    width: 156px;
+    height: 54px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 106.5%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.footnav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+.footnav2 {
+    display: flex;
+    /* justify-content: space-between;  */
+}
+.text1 {
+    margin-right: 32px;
+}
+.longyellow {
+    position: absolute;
+    background: #F58A07;
+    border-radius: 20px 0px 0px 20px;
+    width: 53px;
+    height: 287px;
+    right: 0;
+    top: 38px;
+}
+.shortyellow {
+    position: absolute;
+    background: #F58A07;
+    border-top-right-radius: 20px;
+    width: 53px;
+    height: 144px;
+    left: 0;
+    bottom: 0;
 }
