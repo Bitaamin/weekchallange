@@ -199,6 +199,7 @@ button {
     width: 628px;
     height: 54px;
     margin-bottom: 24px;
+    border-style: none; 
 }
 .mar {
     margin-right: 21px;
@@ -206,6 +207,7 @@ button {
 .diff {
     width: 1280px;
     height: 215px;
+    border-style: none; 
 }
 
 /* footer */

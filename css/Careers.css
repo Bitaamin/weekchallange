@@ -111,6 +111,7 @@ button {
     text-transform: capitalize;
     color: #FFFFFF;
     padding: 18px 32px;
+    border-style: none;  
 }
 /*  Section 2 */
 
