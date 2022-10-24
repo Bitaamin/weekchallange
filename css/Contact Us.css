@@ -24,7 +24,7 @@ nav ul li {
     margin: 0 32px;
     cursor: pointer;
 }
-li:hover {
+.menu li a:hover {
     color: white ;
     border-radius: 10px;
     background-color: #063255;
